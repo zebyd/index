@@ -1,24 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Button with Image and Text</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Avatar</title>
     <style>
-        /* 添加背景图片 */
-        button {
-            background-image: url('your-image-path.jpg'); /* 将 'your-image-path.jpg' 替换为你的图片路径 */
-            background-size: cover; /* 根据需要调整背景图片的大小 */
-            background-position: center; /* 根据需要调整背景图片的位置 */
-            background-repeat: no-repeat; /* 不重复图片 */
-            border: none; /* 去掉按钮的边框 */
-            color: white; /* 按钮文字颜色设置为白色 */
-            font-size: 16px; /* 按钮文字大小 */
-            padding: 10px 20px; /* 设置按钮内边距 */
-            text-align: center; /* 文本居中 */
-            text-transform: uppercase; /* 文本转换为大写 */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+        }
+        .avatar-container {
+            text-align: center;
+            margin-top: 50px; /* 调整头像上方的间距 */
+        }
+        .avatar {
+            width: 150px; /* 设置头像大小 */
+            height: 150px;
+            border-radius: 50%; /* 将图片变成圆形 */
         }
     </style>
 </head>
 <body>
-    <button>hello word</button>
+    <div class="avatar-container">
+        <img src="avatar.jpg" alt="Avatar" class="avatar">
+    </div>
 </body>
 </html>
