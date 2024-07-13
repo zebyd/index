@@ -28,12 +28,32 @@
             font-size: 20px; /* 设置昵称的字体大小 */
             color: #333; /* 设置昵称的颜色 */
         }
+         .button {
+            display: inline-block;
+            padding: 10px 20px; /* 设置按钮的内边距 */
+            margin: 10px; /* 设置按钮之间的间距 */
+            font-size: 16px; /* 设置按钮文字的大小 */
+            color: white; /* 设置按钮文字的颜色 */
+            background-color: #007BFF; /* 设置按钮背景颜色 */
+            border: none;
+            border-radius: 10px; /* 设置按钮的圆角边框 */
+            text-decoration: none; /* 移除链接的下划线 */
+            transition: background-color 0.3s; /* 设置背景颜色过渡效果 */
+        }
+        .button:hover {
+            background-color: #0056b3; /* 设置按钮悬停时的背景颜色 */
+        }
     </style>
 </head>
 <body>
     <div class="avatar-container">
         <img src="IMG_1676.jpeg" alt="Avatar" class="avatar">
         <div class="nickname">中二病有毒的小站</div>
+        <div class="button-container">
+        <a href="https://www.example.com" class="button">链接1</a>
+        <a href="https://www.example.com" class="button">链接2</a>
+        <a href="https://www.example.com" class="button">链接3</a>
+    </div>
     </div>
 </body>
 </html>
